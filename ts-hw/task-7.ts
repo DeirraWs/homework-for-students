@@ -14,3 +14,6 @@ interface Product {
     price: number;
     description: string;
 }
+
+export type ProductPreview = Pick<Product, "title" | "price">;
+export type ProductWithoutDescription = Omit<Product, "description">;

@@ -5,5 +5,12 @@
 */
 
 const person = {
-    
+    name: "Олексій",
+    age: 20,
+    address: {
+        city: "Львів",
+        street: "Шевченка"
+    }
 };
+
+console.log(person);

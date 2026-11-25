@@ -1,7 +1,37 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+}
+
+body {
+  display: block;
+}
+
+.task-panel {
+  box-sizing: border-box;
+  width: min(100%, 32rem);
+  padding: clamp(1rem, 5vw, 2rem);
+  border: 1px solid currentColor;
+  border-radius: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.task-panel h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+}
+
+.task-panel dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0;
+}
+
+.task-panel dd {
+  margin: 0;
 }

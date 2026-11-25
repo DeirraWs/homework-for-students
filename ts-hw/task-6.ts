@@ -13,3 +13,6 @@ interface User {
     age: number;
     email: string;
 }
+
+export type FullUser = Required<User>;
+export type PartialUser = Partial<User>;
